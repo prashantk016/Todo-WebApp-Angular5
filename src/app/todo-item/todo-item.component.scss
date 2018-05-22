@@ -1,0 +1,64 @@
+
+ 
+  li, h3 {
+    clear:both;
+    list-style:none;
+  }
+  input {
+    outline: none;
+  }
+  a{
+	  outline: none;
+    float: right;
+    &:hover {
+		  color: #0FC57C;
+	  }
+  }
+
+img:hover{
+    transform: scale(1.2,1.2);
+    opacity: 0.7;
+}
+img{
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    float: right;
+    margin: 8px 4px;
+    width: 20px;
+    height: 20px; }
+    label[for='newItem'] {
+    display: block;
+    margin: 0 0 20px;
+    &:hover {
+     
+      transform: scale(1.2,1.2);
+      opacity: 0.7;
+      
+    }
+}
+  
+  
+
+/* Task list */
+li {
+    overflow: hidden;
+  /*  padding: 20px 0;*/
+    border-bottom: 1px solid #eee;
+}
+input[type="checkbox"] {
+    margin: 0 2px;
+    position: relative;
+  /*  top: 15px;*/
+}
+label {
+    font-size: 18px;
+    line-height: 40px;
+  /*  width: 237px;*/
+    padding: 0 0 0 6px;
+      text-transform: capitalize;
+}
+.delete:hover {
+    color: #CF2323;
+}

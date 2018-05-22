@@ -1,0 +1,21 @@
+<div class="todo_main" (change)="update_date()" (click)="change_focus($event)" (mousedown)="onMouseDown($event)" (mouseup)="onMouseUp($event)" (mousemove)="onMouseMove($event)">
+  <span class="close" (click)="close_todo()">×</span>
+  <div class="title" contenteditable="true">
+    Untitled</div>
+    <div class="content">
+      <ul class="items">
+          <ng-template TodoItem-host></ng-template>
+      </ul>
+      <span class="newItem">
+        <input class="text" type="text" placeholder="Add Task">
+      </span>
+        <a class="addItem newItem" href="#" (click)="addItem($event)">
+          <img class="addItemImg" src="./assets/images/add_box.png">
+        </a>
+     
+    </div>
+    <div class="author_date_div">
+      <span class="author pull-left">Username</span>
+      <span class="date pull-right">{{date}}</span>
+    </div>
+  </div>

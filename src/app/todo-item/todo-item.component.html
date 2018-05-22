@@ -1,0 +1,5 @@
+<li *ngIf="task!=''">
+  <input type="checkbox" (click)="task_state($event)">
+  <label contenteditable="true">{{task}}</label>
+  <a class="delete"><img src="./assets/images/delete_icon.svg" (click)="delete_item($event)"></a>
+</li>

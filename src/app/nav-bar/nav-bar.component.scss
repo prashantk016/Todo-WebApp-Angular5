@@ -1,0 +1,36 @@
+//Variables
+
+$white:white;
+$grey:grey;
+$fontfamily:sans-serif;
+
+
+//Mixins
+@mixin style($color,$line,$font_size,$font_family){
+    color: $color;
+    line-height: $line;
+    font-size: $font_size;
+    font-family: $font_family;
+}
+
+nav { 
+    border-bottom: 3px solid $grey;
+    background-color: rgba(59, 209, 255, 1);
+    height: 50px;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+}
+
+.pull-right {
+    padding-right: 5px;
+    float: right; 
+}
+.app_name{
+    padding: 20px;
+    @include style($white,2,25px,$fontfamily);
+}
+.username{
+    text-decoration: underline;
+    padding-right: 10px;
+    @include style($white,2.4,20px,$fontfamily)
+}
